@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<td> <input type="text" id="soA"></td> Nhập giá trị số a
+<td> <input type="text" id="soB"></td>Nhập giá trị số b
+<td> <input type="button" onclick="Enter()" value="Enter"></td>
+<br><br>
+<p id="result"></p>
+
+</body>
+</html>
+<script>
+    function Enter() {
+        let a = document.getElementById("soA").value;
+        let b = document.getElementById("soB").value;
+        let nhana = Math.pow(parseInt(a),2)
+        let nhanab = Math.pow(parseInt(a),parseInt(b));
+        document.getElementById("result").innerHTML= "bình phương số a = " + nhana + " " + " bình phương a mũ b = " + nhanab
+
+    }
+</script>

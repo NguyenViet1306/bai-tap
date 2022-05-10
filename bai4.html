@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+
+    <tr><input type="text" placeholder="Nhập vào a" id="a1"></tr>
+
+    <tr><p >Diện tích hình vuông là:</p></tr>
+        <input id="dthv" type="text">
+    <tr><p>Chu vi hình vuông là:</p></tr>
+        <input id="cvhv" type="text">
+    <tr><button id="tinh" onclick="enter()">Enter</button></tr>
+
+
+</table>
+</body>
+<script>
+    function enter() {
+        let a=document.getElementById("a1").value
+        let dt=a*a
+        let cv=a*4
+        document.getElementById("dthv").innerText="diện tích hình vuông là:" + dt
+        document.getElementById("cvhv").innerText="chu vi hình vuông là:" + cv
+    }
+</script>
+</html>
