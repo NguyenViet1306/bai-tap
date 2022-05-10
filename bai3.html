@@ -5,14 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-<input type="text">
+
+<input type="text" id="soA" placeholder="nhập số a">
+<input type="text" id="soB" placeholder="nhập số b">
+<input type="button" onclick="tich()" value="Enter">
+<p id="Result">Result:</p>
 </body>
 <script>
-    inputA = prompt("enter a")
-    inputB = prompt("enter b")
-    let a=parseInt(inputA)
-    let b=parseInt(inputB)
+    function tich() {
+
+    let a=document.getElementById("soA").value
+    let b=document.getElementById("soB").value
     let S =a*b
-    document.write("Diện tích là:"+ S)
+    document.getElementById("Result").innerHTML="Result:" +S
+    }
 </script>
 </html>
